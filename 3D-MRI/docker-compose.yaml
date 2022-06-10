@@ -1,0 +1,8 @@
+version: "1.0"
+services:
+  style-transfer:
+    build: .
+    volumes:
+      - DATASET_DIR:/var/dataset
+      - RESULTS_DIR:/home/3D-MRI-style-transfer/results
+      - CHECKPOINT_PATH:/home/3D-MRI-style-transfer/checkpoints/experiment

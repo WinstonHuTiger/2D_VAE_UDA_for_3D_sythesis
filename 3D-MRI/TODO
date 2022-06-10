@@ -1,0 +1,18 @@
+TODO:
+--------------------
+Focus on Pix2Pix OBELISK
+confidence map with bayesian neural networks
+3D VerSe
+
+Done:
+--------------------
+Structure similarity loss
+--------------------
+Check why Pix2Pix fails
+Encode only for Obelisk G
+Better upsampling
+Intersection mask for T2
+Obelisk D
+Obelisk G
+Original OBELISK
+OBELISK Hybrid
