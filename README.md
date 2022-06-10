@@ -176,7 +176,7 @@ python test.py \
 ```
 ## Citation
 
-If you find our work is usefully in your own research, please cite our work. 
+If you find our work is useful in your own research, please cite our work. 
 
 ## Acknowledgement
 The image-to-image training code is from    [3D-MRI-style-transfer](https://github.com/Linus4world/3D-MRI-style-transfer).
