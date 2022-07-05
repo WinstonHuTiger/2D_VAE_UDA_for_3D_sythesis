@@ -1,6 +1,6 @@
 # 2D_VAE_UDA_for_3D_sythesis
-This is the offical repository of our paper *Domain-adaptive 3D Medical Image Synthesis:
-An Efficient Unsupervised Approach* .
+This is the offical Pytorch implementation of our MICCAI 2022 paper, [*Domain-adaptive 3D Medical Image Synthesis:
+An Efficient Unsupervised Approach*](https://arxiv.org/pdf/2207.00844.pdf).
 
 ## Abstract
 Medical image synthesis has attracted increasing attention
@@ -33,12 +33,12 @@ synthesis accuracy on unseen domains in a 3D setting.
 <center>
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="figs/miccai_fig2_edited.jpg">
+    src="figs/results_comparison_v6.png">
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;">The synthesized image comparison between before DA, 2D VAE UDA (ours) and supervised DA methods is shown on CBICA -> TCIA and TCIA -> CBICA. The difference map is computed by subtracting the ground truth slice and the synthesized slice.</div>
+    padding: 2px;">Results on example slices achieved by different methods: (a) Without domain adaptation (DA), (b) 3D VAE, and (c) our 2D s-VAE. The difference map (in heatmap) is computed by subtracting the ground truth slice and the synthesized slice. We observe that our approach achieves best perceptual quality.</div>
 </center>
 
 
@@ -176,7 +176,19 @@ python test.py \
 ```
 ## Citation
 
-If you find our work is useful in your own research, please cite our work. 
+If you find our work is useful in your own research, please cite our work:
+```
+@misc{https://doi.org/10.48550/arxiv.2207.00844,
+  author = {Hu, Qingqiao and Li, Hongwei and Zhang, Jianguo},  
+  title = {Domain-Adaptive 3D Medical Image Synthesis: An Efficient Unsupervised Approach},
+  publisher = {arXiv},
+  year = {2022},
+}
+
+```
+
+## License
+Our work is released under the GPL-3.0 license. Please check the [LICENSE](LICENSE) for more information.
 
 ## Acknowledgement
 The image-to-image training code is from    [3D-MRI-style-transfer](https://github.com/Linus4world/3D-MRI-style-transfer).
